@@ -1,28 +1,44 @@
+:root{
+    --primario: #DE9100;
+    --radio-border: 0.5rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .navegacion-principal{
 align-items: center;
 display: flex;
 flex-direction: column;
+font-size: 1rem;
 background-color: rgb(10, 117, 78);
-height: 30px;
-
-
+padding: 1rem ;
+line-height: 1.5;
 
 }
 a{
     color: aliceblue;
-    
+    text-decoration: none;
+
 }
+
 @media(min-width:480px){
     .navegacion-principal{
         flex-direction: row;
         justify-content: space-around;
+        font-size: 2rem;
     width: 100%;
+    
     }
 }
 
 
 h1{
     text-align: center;
+    padding: 2rem;
 }
 
 .banner {
@@ -32,13 +48,18 @@ h1{
     justify-content: center;
     align-items: center;
 height: 450px;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+
 }
 .banner img{
     width: 2rem;
+    
 
 }
 .container-favorito{
-    background-color: rgb(244, 244, 246);
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,24 +74,149 @@ width: 100%;
     width: 100%;
    
     }
+
 }
+
 .card{
     text-align: center;
-    background-color: rgb(249, 249, 247);
+   
     width: 100%;
     max-width: 400px;
 }
 .card img{
     border-radius: 50%;
-    background-color: rgb(103, 116, 19);
-    padding: 1rem;
+    background-color: var(--primario);
+    padding: 2rem
 }
 .favoritos h2{
     text-align: center;
-    padding: 1rem;
+    padding: 3rem;
+    
+    
+   
+   
+    
 }
+    form{
+    display: flex;
+        flex-direction: column;
+
+       margin:auto
+       
+       var(--primario)
+
     
+    }
     
+   
+    .espacio{
+        text-align: center;
+       
     
+    }
+    .formu{
+        background-color: rgb(32, 16, 16);
+       
+        border-radius: 5px;
+        padding-bottom: 4rem
+    
+        
+
+        
+
+    }
+    .contacto{
+        text-align: center;
+        padding: 2rem;
+
+      
+    }
+    
+    .contenedor{
+        
+     background-color: rgb(252, 252, 252);
+        padding: 15px;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 1200px;
+        margin: 2rem auto;
+
+    }
+    
+   .container-favorito h3{
+    color: rgb(134, 142, 19);
+    padding: 30px;
 
 
+   }
+
+.contacto h2{
+    color: var(--primario);
+    padding: 20px;
+    font-size: 2rem;
+
+}
+.formulario h2{
+    color: var(--primario);
+    text-align: center;
+   
+    font-size: 1rem;
+}
+body{
+    background-color: antiquewhite;
+    background-image: linear-gradient(white,antiquewhite);
+}
+    .contenedor2{
+        width: 100%;
+        max-width: 800px;
+        margin: 2rem auto;
+
+        
+
+    }
+    .boton{
+        border-radius: 0.5rem;
+        background-color: #DE9100;
+        padding: 1rem 3rem;
+        font-size: 1rem;
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 1rem;
+        width: 90%;
+        max-width: 200px;
+        text-align: center;
+        margin: 1rem auto;
+        border: none;
+
+
+
+    }
+
+    @media(min-width:480px){
+        .formu{
+            flex-direction: row;
+            justify-content: space-around;
+            font-size: 4rem;
+        width: 100%;
+        
+        }
+    }
+    
+span{
+    font-size: 15px;
+}
+input,textarea{
+    margin: 1rem ;
+    padding: 1rem;
+    border-radius:8px ;
+}
+footer span{
+    font-size: 1rem;
+    
+
+}
+footer{
+    text-align: center;
+    margin: 1rem;
+}
